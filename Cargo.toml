@@ -1,0 +1,18 @@
+[workspace]
+resolver = "2"
+
+members = [
+    "main",
+    "actor",
+    "shared",
+]
+
+[workspace.dependencies]
+shared = { path = "shared" }
+wasm-bindgen = "=0.2.95" # pin to the same version of the CLI
+wasm-bindgen-futures = "0.4.45"
+serde = "1.0.210"
+js-sys = "0.3.72"
+web-sys = "0.3.72"
+web-rpc = "0.0.3"
+

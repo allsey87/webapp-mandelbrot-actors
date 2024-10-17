@@ -1,0 +1,17 @@
+[package]
+name = "actor"
+version = "0.1.0"
+license = "MIT"
+edition = "2021"
+
+[dependencies]
+shared = { workspace = true }
+js-sys = { workspace = true }
+web-sys = { workspace = true, features = ["DedicatedWorkerGlobalScope", "OffscreenCanvasRenderingContext2d", "ImageData"] }
+wasm-bindgen = { workspace = true }
+wasm-bindgen-futures = { workspace = true }
+web-rpc = { workspace = true }
+num-complex = "0.4.0"
+getrandom = { version = "0.2.2", features = ["js"] }
+rand = "0.8.3"
+hsl = "0.1.1"
